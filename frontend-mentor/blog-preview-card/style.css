@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+   font: 16px/1.5 "Figtree", sans-serif; 
+   font-weight: 500;
+   box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+:root {
+    --color-backgound: hsl(47, 88%, 63%);
+    --color-card: white;
+    --color-text-primary: hsl(0, 0%, 7%);
+    --corol-text-secondary: hsl(0, 0%, 42%);
+}
+
+.border-black {
+    border: 1px solid black;
+}
+
+.b-show-10-10 {
+    box-shadow: 10px 10px black;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.p-1 {
+    padding: 1em;
+}
+
+.p-2 {
+    padding: 2em;
+}
+
+.gap-small {
+    gap: 0.5em;
+}
+
+.m-b-small {
+    margin-bottom: 0.5em;
+}
+
+.gap-medium {
+    gap: 1em;
+}
+
+.b-radius-1 {
+    border-radius: 1em;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.f-s-medium {
+    font-size: 1.6em;
+}
+
+.primary-btn {
+    padding: 0.3em 1em;
+    background-color: var(--color-backgound);
+    border-radius: 0.3em;
+}
+
+.f-basis-10 {
+    flex: 0 0 10%;
+}
+
+
+body {
+    background-color: var(--color-backgound);
+    min-height: 100dvh;
+}
+
+.blog-preview-card {
+    background-color: var(--color-card);
+    color: var(--color-text-primary);
+    width: 400px;
+
+    & > p {
+        color: var(--corol-text-secondary);
+    }
+}
