@@ -29,7 +29,7 @@ html {
 
     --light-stale-blue: hsl(252, 100%, 67%); /* not used*/
     --light-royal-blue: hsl(241, 81%, 54%); /* not used - only to use some color - use in beeter way*/
-    --violet-blue: hsla(256, 72%, 46%, 1);
+    --violet-blue: 256, 72%, 46%;
     --persion-blue: rgb(202 196 255);
 
     --pale-blue: hsl(221, 100%, 96%); /* not used*/
@@ -117,7 +117,12 @@ html {
 }
 
 .result-container {
-    background-color: var(--violet-blue);
+    background: 
+    linear-gradient(
+        var(--light-stale-blue),
+        var(--light-royal-blue)
+    );
+    
     color: white;
 
     .your-result {
@@ -127,7 +132,16 @@ html {
 
     .circle {
         border-radius: 50%;
-        background-color: var(--light-royal-blue);
+        background: 
+        linear-gradient(
+        hsla(var(--violet-blue), 1),
+        hsla(var(--violet-blue), 0.9),
+        hsla(var(--violet-blue), 0.7),
+        hsla(var(--violet-blue), 0.5),
+        hsla(var(--violet-blue), 0.3),
+        hsla(var(--violet-blue), 0.1),
+        hsla(var(--violet-blue), 0)
+        );
         width: 200px;
         height: 200px;
 
