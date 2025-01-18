@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Results summary component</title>
+</head>
+
+<body>
+
+  <div class="site d-flex justify-center align-center">
+    <div class="summary-component d-flex b-r-big">
+      <div class="result-container basis-50 p-big d-flex direction-column align-center gap-normal b-r-big">
+        <h4 class="your-result">Your Result</h4>
+        <div class="circle d-flex direction-column justify-center align-center">
+          <h1 class="result-number">76</h1>
+          <p class="max-result">of 100</p>
+        </div>
+        <div class="summary-message d-flex direction-column justify-center align-center">
+          <h2 class="result-summary-message-">Great</h2>
+          <p class="result-message">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+
+      </div>
+      <div class="summary-container basis-50 p-normal d-flex direction-column gap-normal">
+        <h4 class="summary-heading">Summary</h4>
+        <div class="summary-results d-flex direction-column gap-small">
+          <div class="summary-result reaction-result d-flex align-center justify-between p-small b-r-small">
+
+            <div class="summary-name d-flex align-center gap-very-small bold">
+              <img src="assets/images/icon-reaction.svg" alt="">
+              Reaciton
+            </div>
+            <div class="summary-points">
+              <p>
+                <span class="bold">80</span>
+                <span class="bold opacity-low"> / 100</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="summary-result memory-result d-flex align-center justify-between p-small b-r-small">
+            <div class="summary-name d-flex align-center gap-very-small bold">
+              <img src="assets/images/icon-memory.svg" alt="">
+              Memory
+            </div>
+            <div class="summary-points">
+              <p>
+                <span class="bold">92</span>
+                <span class="bold opacity-low"> / 100</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="summary-result verbal-result d-flex align-center justify-between p-small b-r-small">
+            <div class="summary-name d-flex align-center gap-very-small bold">
+              <img src="assets/images/icon-verbal.svg" alt="">
+              Verbal
+            </div>
+            <div class="summary-points">
+              <p>
+                <span class="bold">61</span>
+                <span class="bold opacity-low"> / 100</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="summary-result visual-result d-flex align-center justify-between p-small b-r-small">
+            <div class="summary-name d-flex align-center gap-very-small bold">
+              <img src="assets/images/icon-visual.svg" alt="">
+              Visual
+            </div>
+            <div class="summary-points">
+              <p>
+                <span class="bold">72</span>
+                <span class="bold opacity-low"> / 100</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <a class="continue-btn b-r-big" href="#">Continue</a>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
