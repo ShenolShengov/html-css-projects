@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font: 14px/1.5 'Montserrat', serif;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+:root {
+    --dark-cayn: 158, 36%, 37%; /* used */
+    --cream: 30, 38%, 92%; /* background-color */
+
+    --very-dark-blue: 212, 21%, 14%;
+    --dark-grayish-blue: 228, 12%, 48%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+.gap-small {
+    gap: 1em;
+}
+
+.gap-normal {
+    gap: 1.5em;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.basis-50 {
+    flex-basis: 50%;
+}
+
+.grow-1 {
+    flex-grow: 1;
+}
+
+.site {
+    min-height: 100dvh;
+    background-color: hsl(var(--cream));
+    color: hsl(var(--dark-grayish-blue));
+}
+
+.preview-card-component {
+    width: 700px;
+    border-radius: 1em;
+    overflow: hidden;
+
+    .product-information {
+        background: white;
+        padding: 2.5em;
+
+        .product-type {
+            font-size: 1.2em;
+            text-transform: uppercase;
+            letter-spacing: 0.4em;
+        }
+
+        .product-name,
+        .active-price {
+            font-family: Fraunces, sans-serif;
+        }
+
+        .product-name {
+            font-size: 3em;
+            line-height: 1;
+            color: black;
+        }
+
+        .active-price {
+            font-size: 2.5em;
+            color: hsl(var(--dark-cayn));
+        }
+
+        .old-price {
+            text-decoration: line-through;
+        }
+
+        .add-to-cart-btn {
+            color: white;
+            font-weight: 700;
+            background-color: hsl(var(--dark-cayn));
+            padding: 1.1em;
+            font-size: 1.1em;
+            border-radius: 0.7em;
+            transition: all 0.2s ease-in;
+
+            .img-container {
+                flex: 0 0 7%;
+            }
+
+            &:hover {
+                background-color: hsl(var(--very-dark-blue));
+            }
+        }
+    }
+}
+
+@media (max-width: 374px) {
+    
+    
+    .site {
+        padding: 1em;
+    }
+
+    .preview-card-component {
+        flex-direction: column;
+
+        .product-information {
+            padding: 2em;
+
+            .product-name {
+                font-size: 2.3em;
+            }
+        }
+    }
+}
