@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font: 15px/1.5 'Overpass', serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+body,
+input,
+textarea,
+select,
+option {
+    font: inherit;
+}
+
+input {
+    cursor: pointer;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --orange: 25, 97%, 53%;
+    --light-grey: 217, 12%, 63%;
+    --dark-blue: 213, 19%, 18%;
+    --very-dark-blue: 216, 12%, 8%;
+}
+
+.d-none {
+    display: none;
+}
+
+:where(.d-flex) {
+    display: flex;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.gap-big {
+    gap: 1.7em;
+}
+
+.gap-small {
+    gap: 0.3em;
+}
+
+.p-big {
+    padding: 2.5em;
+}
+
+.b-r-big {
+    border-radius: 2em;
+}
+
+.site {
+    min-height: 100dvh;
+    background-color: hsl(var(--very-dark-blue));
+}
+
+.rating-component {
+    width: 420px;
+    background-color: hsl(var(--dark-blue));
+    color: hsl(var(--light-grey));
+
+    .star-container {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background: hsla(var(--very-dark-blue), 0.3);
+        margin-bottom: 0.3em;
+    }
+
+    .question-container {
+        gap: 0.3em;
+    }
+
+    .primary-heading {
+        color: white;
+        font-weight: 700;
+        font-size: 1.7em;
+    }
+
+    input[type='radio'] {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        appearance: none;
+        background: hsla(var(--very-dark-blue), 0.3);
+        color: hsl(var(--light-grey));
+        font-weight: 700;
+        position: relative;
+
+        &::before {
+            content: '' attr(value) '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &:hover,
+        &:checked {
+            color: black;
+        }
+
+        &:hover {
+            background-color: white;
+        }
+
+        &:checked {
+            background-color: hsl(var(--orange));
+        }
+    }
+
+    .submit-btn {
+        background-color: hsl(var(--orange));
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: black;
+        font-weight: 700;
+        padding: 0.8em;
+        border: none;
+        outline: none;
+        border-radius: 2em;
+
+        &:hover {
+            background-color: white;
+        }
+    }
+
+    .score-count {
+        color: hsl(var(--orange));
+        background: hsla(var(--very-dark-blue), 0.3);
+        padding: 0.5em 1em;
+        border-radius: 2em;
+    }
+
+}

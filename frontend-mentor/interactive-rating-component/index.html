@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body>
+
+  <div class="site d-flex justify-center align-center">
+
+    <form method="post" action="#" class="rating-component d-flex direction-column gap-big p-big b-r-big">
+      <div class="rate-container d-flex direction-column gap-big ">
+        <div class="star-container d-flex justify-center align-center">
+          <img src="images/icon-star.svg" alt="">
+        </div>
+
+        <div class="question-container d-flex direction-column">
+          <h1 class="primary-heading">How did we do?</h1>
+
+          <p class="question-sub-text">Please let us know how we did with your support request. All feedback is
+            appreciated
+            to help us improve our offering!
+          </p>
+        </div>
+
+
+        <div class="rating-score-container d-flex justify-between">
+          <input type="radio" id="score-1" name="rating-score" value="1">
+          <input type="radio" id="score-2" name="rating-score" value="2">
+          <input type="radio" id="score-3" name="rating-score" value="3">
+          <input type="radio" id="score-4" name="rating-score" value="4">
+          <input type="radio" id="score-5" name="rating-score" value="5">
+        </div>
+
+        <input type="submit" value="Submit" class="submit-btn">
+      </div>
+      <div class="thank-you-container d-none d-flex direction-column gap-big align-center">
+        <div class="thank-you-image">
+          <img src="images/illustration-thank-you.svg" alt="">
+        </div>
+        <p class="score-count">You selected 4 out of 5</p>
+        <div class="thank-you-text d-flex direction-column justify-center align-center gap-small">
+          <h2 class="primary-heading">Thank you!</h2>
+
+          <p class="text-center">We appreciate you taking the time to give a rating. If you ever need more support,
+            don’t hesitate to get in touch!
+          </p>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
