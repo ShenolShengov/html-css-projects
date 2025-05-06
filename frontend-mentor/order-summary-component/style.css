@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+@theme {
+    --color-primary-blue: hsl(225, 100%, 98%);
+    --color-primary-bright-blue: hsl(245, 75%, 52%);
+    --color-very-pale-blue: hsl(225, 100%, 98%);
+    --color-desaturated-blue: hsl(224, 23%, 55%);
+    --color-dark-blue: hsl(223, 47%, 23%);
+}
+
+html {
+    font: 16px/1.5 "Red Hat Display", sans-serif;
+}
+
+.site {
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+}

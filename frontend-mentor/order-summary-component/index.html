@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="./output.css" rel="stylesheet" />
+
+    <title>Frontend Mentor | Order summary card</title>
+  </head>
+  <body>
+    <div
+      class="site min-h-dvh bg-primary-blue flex justify-center items-center"
+    >
+      <div class="w-lg rounded-2xl overflow-hidden">
+        <div>
+          <img class="w-full" src="images/illustration-hero.svg" alt="" />
+        </div>
+        <div class="bg-white flex flex-col py-10 px-14 gap-8 text-center">
+          <h1 class="font-extrabold text-4xl">Order Summary</h1>
+          <p class="opacity-60 w-xs self-center">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+          <div
+            class="flex bg-very-pale-blue py-8 px-6 rounded-xl gap-4 items-center"
+          >
+            <div>
+              <img class="w-full" src="images/icon-music.svg" alt="" />
+            </div>
+            <div>
+              <h2 class="font-extrabold">Annual Plan</h2>
+              <p class="opacity-60">$59.99/year</p>
+            </div>
+            <div class="grow text-right">
+              <a
+                class="text-primary-bright-blue underline font-bold hover:opacity-70"
+                href="#"
+                >Change</a
+              >
+            </div>
+          </div>
+          <button
+            class="bg-primary-bright-blue text-primary-blue rounded-xl py-3 font-bold hover:opacity-70 shadow-[5px_25px_16px_rgba(56,41,224,0.15)]"
+          >
+            Proceed to Payment
+          </button>
+          <button class="text-desaturated-blue font-black hover:text-black">
+            Cancel Order
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
